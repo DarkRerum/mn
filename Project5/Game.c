@@ -332,6 +332,8 @@ static void Game_roll_dice() {
 		lastRoll[i] = rand() % 6 + 1;	
 }
 
+static int Game_isPlayerAMonopolist(int player, Game_Prop_Type type);
+
 static void Game_player_land(int newposition) {
 	/* if a buyable property */
 	if (gProperties[newposition].price > 0 && gProperties[newposition].mortaged == 0) {

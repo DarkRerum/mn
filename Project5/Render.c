@@ -318,9 +318,7 @@ static int parsePropFromPos(int x, int y) {
 	const int PROP_WIDTH = 66;
 	const int PROP_HEIGHT = 80;
 	const int PROP_HEIGHT_FULL = 104;
-	const int GO_WIDTH = 103;	
-	
-	int result;
+	const int GO_WIDTH = 103;		
 
 	if (y >= SCREEN_HEIGHT - GO_WIDTH) {		
 		return 9 - (x - GO_WIDTH) / PROP_WIDTH;
@@ -391,12 +389,9 @@ static void processEventsAndRender() {
 	}
 }
 
-int main() {
-
-	int i;
+int main(int argc, char* argv[]) {	
 		
 	init();	
-
 
 	Game_init();	
 
